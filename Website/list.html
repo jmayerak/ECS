@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>How To Create HTML Lists</title>
+  </head>
+  <body>
+
+    <h1> Unordered List </h1>
+    
+    <h4><a href="index.html"> Home </a></h4>
+    
+    <p>
+      Let's start by creating an unordered list that will created a list with black circular bullet points. Start with your unordered list tags. Open and close right away. Close tag is 1 line below open.
+    </p>
+
+    <pre class="sample">
+    
+      &ltul&gt 
+      &lt/ul&gt
+    </pre>
+
+    <p>
+      Next, you will need to add items by using the list items tags. Add your list item tags. Open and close right away. Do this for as many items as you have.
+    </p>
+
+    <pre  class="sample">
+    
+      &ltul&gt
+        &ltli&gt&lt/li&gt
+        &ltli&gt&lt/li&gt
+        &ltli&gt&lt/li&gt
+      &lt/ul&gt
+    </pre>
+
+    <p>The above set up would create the following unordered list.</p>
+
+    <ul>
+      <li>Beginning of my list.</li>
+      <li>Middle of my list.</li>
+      <li>End of my list.</li>
+    </ul>
+
+    <p>
+      Unordered lists have a list-style-type attribute that will change the listing system.
+    </p>
+
+    <ol>
+      <li>style="list-style-type:disc", default, creates a black filled circle bullet</li>
+      <li>style="list-style-type:circle", creates an empty circle bullet</li>
+      <li>style="list-style-type:square", creates a square bullet</li>
+      <li>style="list-style-type:none", creates unmarked list items</li>
+    </ol>
+
+    <table>
+      <tr>
+        <td class="sample">
+          <pre>
+          
+  &ltul style="list-style-type:square"&gt   
+    &ltli &gt&lt/li&gt
+    &ltli &gt&lt/li&gt
+    &ltli &gt&lt/li&gt
+  &lt/ul&gt
+          </pre>
+        </td>
+        <td class="example">
+          <ul style="list-style-type:square">
+            <li>Beginning of my list.</li>
+            <li>Middle of my list.</li>
+            <li>End of my list.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td class="sample">
+          <pre>
+          
+  &ltul style="list-style-type:circle" &gt
+    &ltli&gt&lt/li&gt
+    &ltli&gt&lt/li&gt
+    &ltli&gt&lt/li&gt
+  &lt/ul&gt
+          </pre>
+        </td>
+        <td class="example">
+          <ol style="list-style-type:circle">
+            <li>Beginning of my list.</li>
+            <li>Middle of my list.</li>
+            <li>End of my list.</li>
+          </ol>
+        </td>
+      </tr>
+
+    </table>
+
+    <h1> Ordered List </h1>
+    <p>
+      The steps are exactly the same as above, but we will use ordered list tags this time. Each item will be marked with a number to begin. Start with your ordered list tags. Open and close right away. Close tag is 1 line below open.
+    </p>
+
+    <pre class="sample">
+    
+      &ltol&gt 
+      &lt/ol&gt
+    </pre>
+
+    <p>
+      Next, you will need to add items by using the list items tags. Add your list item tags. Open and close right away. Do this for as many items as you have.
+    </p>
+
+    <pre class="sample">
+    
+      &ltol&gt
+        &ltli&gt&lt/li&gt
+        &ltli&gt&lt/li&gt
+        &ltli&gt&lt/li&gt
+      &lt/ol&gt
+    </pre>
+
+    <p>The above set up would create the following unordered list.</p>
+
+    <ol>
+      <li>Beginning of my list.</li>
+      <li>Middle of my list.</li>
+      <li>End of my list.</li>
+    </ol>
+
+    <p>
+      Ordered lists have a type attribute that will change the "numbering" system.
+    </p>
+
+    <ul>
+      <li>type="1" - default, standard numbered list</li>
+      <li>type="A" - uppercase letters</li>
+      <li>type="a" - lowercase letters</li>
+      <li>type="I" - uppercase Roman numerals</li>
+      <li>type="i" - lowercase Roman numerals</li>
+    </ul>
+
+    <table>
+      <tr>
+        <td class="sample">
+          <pre>
+          
+    &ltol type="A"&gt    
+      &ltli&gt&lt/li&gt
+      &ltli&gt&lt/li&gt
+      &ltli&gt&lt/li&gt
+    &lt/ol&gt
+          </pre>
+        </td>
+        <td class="example">
+          <ol type="A">
+            <li>Beginning of my list.</li>
+            <li>Middle of my list.</li>
+            <li>End of my list.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td class="sample">
+          <pre>
+          
+    &ltol type="I"&gt
+      &ltli&gt&lt/li&gt
+      &ltli&gt&lt/li&gt
+      &ltli&gt&lt/li&gt
+    &lt/ol&gt
+          </pre>
+        </td>
+        <td class="example">
+          <ol type="I">
+            <li>Beginning of my list.</li>
+            <li>Middle of my list.</li>
+            <li>End of my list.</li>
+          </ol>
+        </td>
+      </tr>
+
+    </table>
+
+    <h1>Nested Lists</h1>
+
+    <p>
+      Sometimes we would like to have a list of lists, or what we call a nested list. To accomplish this, we simply need to place a list inside of another list. I have provided a generic sample below, and then a large specfic example.
+    </p>
+
+    <pre class="sample">
+    
+        &ltul&gt
+          &ltli&gt List Beginning &lt/li&gt
+            &ltol&gt
+              &ltli&gt Item 1 &lt/li&gt
+              &ltli&gt Item 2 &lt/li&gt
+              &ltli&gt Item 3 &lt/li&gt
+            &lt/ol&gt
+          &ltli&gt List Middle &lt/li&gt
+            &ltul&gt
+              &ltli&gt Item 1 &lt/li&gt
+              &ltli&gt Item 2 &lt/li&gt
+              &ltli&gt Item 3 &lt/li&gt
+            &lt/ul&gt
+        &lt/ul&gt     
+    </pre>
+
+    <p>
+      Here is a specfic type of Nested List, it is just to much to show the specfic HTML to create this one.
+    </p>
+
+    <ul class="example">
+      <br>
+      <li>My Favorite Things</li>
+      <ul>
+        <li>Favorite Sports</li>
+        <ol>
+          <li>Baseball</li>
+          <li>Football</li>
+          <li>Basketball</li>
+        </ol>
+        <li>Favorite Movies</li>
+        <ol>
+          <li>Star Wars</li>
+          <ul>
+            <li>Correct Watch Order</li>
+            <ul>
+              <li>Episode 4</li>
+              <li>Episode 5</li>
+              <li>Episode 1</li>
+              <li>Episode 2</li>
+              <li>Episode 3</li>
+              <li>Episode 6</li>
+              <li>Episode 7</li>
+              <li>Episode 8</li>
+              <li>Episode 9</li>
+            </ul>
+          </ul>
+          <li>Harry Potter</li>
+          <li>Lord of the Rings</li>
+        </ol>
+        <li>Favorite Books</li>
+        <ol>
+          <li>Ender Series</li>
+          <li>Percy Jackson</li>
+          <li>Beyonders</li>
+        </ol>
+      </ul>
+      <br>
+    </ul>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
