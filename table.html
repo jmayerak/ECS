@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>How To Create HTML Tables</title>
+  </head>
+  <body>
+
+    <h1> BASIC TABLE </h1>
+    
+    <h4><a href="index.html"> Home </a></h4>
+
+    <p>--Start with your table tags. Open and close right away. Close tag is 1 line below open.</p>
+
+    <pre class="sample">
+    
+      &lt table &gt
+      &lt /table &gt
+    </pre>
+
+    <p>
+      Create each table row (horizontal, L to R) of data next. Start with your table row tags. Open and close right away. Close tag is 1 line below open tag.
+    </p> 
+
+    <pre class="sample">
+    
+      &lt table &gt
+        &lt tr &gt
+        &lt /tr &gt
+      &lt /table &gt
+    </pre>
+
+    <p>
+      Then enter your table data tags between your table row tags. Open and close right away ON THE SAME LINE.
+    </p>
+
+    <pre class="sample">
+    
+      &lt table &gt
+        &lt tr &gt
+          &lt td &gt &lt /td &gt
+          &lt td &gt &lt /td &gt
+          &lt td &gt &lt /td &gt
+        &lt /tr &gt
+      &lt /table &gt
+    </pre>
+
+    <p>The above set up would create the following table design.</p>
+    
+    <div class="example">
+      <table>
+        <tr>
+          <td>This is cell 1 in row 1.</td>
+          <td>This is cell 2 in row 1.</td>
+          <td>This is cell 3 in row 1.</td>
+        </tr>
+      </table>
+    </div>
+
+    <p>If we continued the table row and table data pattern we could create any style of table that we wanted to.</p>
+    
+    <div class="example">
+      <table>
+        <tr>
+          <td>This is cell 1 in row 1.</td>
+          <td>This is cell 2 in row 1.</td>
+          <td>This is cell 3 in row 1.</td>
+        </tr>
+        <tr>
+          <td>This is cell 1 in row 2.</td>
+          <td>This is cell 2 in row 2.</td>
+          <td>This is cell 3 in row 2.</td>
+        </tr>
+        <tr>
+          <td>This is cell 1 in row 3.</td>
+          <td>This is cell 2 in row 3.</td>
+          <td>This is cell 3 in row 3.</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <h1> TABLE WITH HEADERS </h1>
+
+    <p>--Start with your table tags. Open and close right away. Close tag is 1 line below open.</p>
+
+    <pre class="sample">
+    
+      &lt table &gt
+      &lt /table &gt
+    </pre>
+
+    <p>
+      Table headers are used to label the columns of the table. Use them inside row tags instead of table data tags. Start with your table row tags. Close tag is 1 line below open tag. Then enter your table header tags. Open and close right away ON THE SAME LINE. This will bold and center your information.  
+    </p>
+
+    <pre class="sample">
+    
+      &lt table &gt
+        &lt tr &gt 
+          &lt th &gt &lt /th &gt
+          &lt th &gt &lt /th &gt
+          &lt th &gt &lt /th &gt
+        &lt /tr &gt
+      &lt /table &gt
+    </pre>
+
+    <p>
+      So now we have the same as above, this time with column headers.
+    </p>
+    
+    <div class="example">
+      <table>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+        </tr>
+        <tr>
+          <td>This is cell 1 in row 1.</td>
+          <td>This is cell 2 in row 1.</td>
+          <td>This is cell 3 in row 1.</td>
+        </tr>
+        <tr>
+          <td>This is cell 1 in row 2.</td>
+          <td>This is cell 2 in row 2.</td>
+          <td>This is cell 3 in row 2.</td>
+        </tr>
+        <tr>
+          <td>This is cell 1 in row 3.</td>
+          <td>This is cell 2 in row 3.</td>
+          <td>This is cell 3 in row 3.</td>
+        </tr>
+      </table>
+    </div>
+
+    <p>
+      We can also create row headers if we wanted to.
+    </p>
+    
+    <div class="example">
+      <table>
+        <tr>
+          <th></th>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+        </tr>
+        <tr>
+          <th>Row 1</th>
+          <td>This is cell 1 in row 1.</td>
+          <td>This is cell 2 in row 1.</td>
+          <td>This is cell 3 in row 1.</td>
+        </tr>
+        <tr>
+          <th>Row 2</th>
+          <td>This is cell 1 in row 2.</td>
+          <td>This is cell 2 in row 2.</td>
+          <td>This is cell 3 in row 2.</td>
+        </tr>
+        <tr>
+          <th>Row 3</th>
+          <td>This is cell 1 in row 3.</td>
+          <td>This is cell 2 in row 3.</td>
+          <td>This is cell 3 in row 3.</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <h1> TABLE WITH BORDERS </h1>
+
+    <p>
+      --Create your table using one of the above methods. From there you need to choose some table style properties to play with. You can apply these to many different tags: table, th, tr, and td. Here is a list of some style properties.
+    </p>
+    <ul>
+      <li>Properties:</li>
+      <ul>
+        <li>border: #px borderType color;</li>
+        <li>border-collapse: collapse;</li>
+        <li>background-color: color;</li>
+        <li>border-radius: #px; (Cause rounded borders.)</li>
+        <li>border-color: color;</li>
+      </ul>
+    </ul>
+    <p>
+      Here is a list of border types that you can enter: dotted, dashed, solid, double, groove, ridge, inset, outset, none, and hidden.
+    </p>
+    <p>
+      Here is a list of border collapse options that you can enter: separate and collapse.
+    </p>
+
+    <p>
+      Here is the HTML code that would create the table at the bottom of the page.
+    </p>
+    <pre class="sample">
+    
+      &lt head &gt
+        &lt style &gt
+          table {
+            border: 1px solid black;
+            border-collapse: initial;
+            background-color: black; 
+            border-radius: 4px;
+            border-color: black;
+          }
+          tr, th {
+            background-color: silver; 
+            color: black; 
+            border-radius: 4px;
+          }
+          
+          td {
+            background-color: plum; 
+            color: white; 
+            border-radius: 4px;
+          }
+        &lt /style&gt
+      &lt head &gt
+      
+      &lt body &gt
+        &lt table &gt
+          &lt tr &gt
+            &lt th &gt Column 1 &lt /th &gt
+            &lt th &gt Column 2 &lt /th &gt
+            &lt th &gt Column 3 &lt /th &gt
+          &lt /tr &gt
+          &lt tr &gt
+            &lt td &gt This is cell 1 in row 1. &lt /th &gt
+            &lt td &gt This is cell 2 in row 1. &lt /th &gt
+            &lt td &gt This is cell 1 in row 1. &lt /th &gt
+          &lt /tr &gt
+          &lt tr &gt
+            &lt td &gt This is cell 1 in row 2. &lt /th &gt
+            &lt td &gt This is cell 2 in row 2. &lt /th &gt
+            &lt td &gt This is cell 1 in row 2. &lt /th &gt
+          &lt /tr &gt
+          &lt tr &gt
+            &lt td &gt This is cell 1 in row 3. &lt /th &gt
+            &lt td &gt This is cell 2 in row 3. &lt /th &gt
+            &lt td &gt This is cell 1 in row 3. &lt /th &gt
+          &lt /tr &gt
+        &lt /table &gt
+      &lt body &gt
+    </pre>
+    
+  <table class="special">
+    <tr>
+      <th> Column 1 </th>
+      <th> Column 2 </th>
+      <th> Column 3 </th>
+    </tr>
+    <tr>
+      <td> This is cell 1 in row 1. </td >
+      <td> This is cell 2 in row 1. </td >
+      <td> This is cell 1 in row 1. </td >
+    </tr>
+    <tr>
+      <td> This is cell 1 in row 2. </td>
+      <td> This is cell 2 in row 2. </td >
+      <td> This is cell 1 in row 2. </td >
+    </tr>
+    <tr>
+      <td> This is cell 1 in row 3. </td >
+      <td> This is cell 2 in row 3. </td >
+      <td> This is cell 1 in row 3. </td >
+    </tr>
+  </table>
+
+
+
+
+  </body>
+</html>
